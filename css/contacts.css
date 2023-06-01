@@ -1,0 +1,106 @@
+.contact-form-container {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.contact-form {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: border-bottom-color 0.3s ease-in-out; /* Add transition for a smooth effect */
+  padding-bottom: 2px; /* Add some padding to create space for the bottom border */
+}
+
+.form-control:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+.form-control:focus::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #9BCDFF;
+  transition: height 0.3s ease-in-out; /* Add transition for a smooth effect */
+}
+
+
+.tm-btn-submit {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 24px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+
+#confirmationMessage {
+  text-align: center;
+}
+
+/* Media query for smaller displays */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .map-frame {
+    width: 100%;
+  }
+}
+
+
+.tm-contact-form {
+  max-width: 380px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-color: #9a9a9a;
+  font-size: 0.9rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.tm-contact-form-container {
+  padding: 55px 67px;
+}
+
+.tm-btn-submit {
+  border: 1px solid #9a9a9a;
+  padding: 10px 35px;
+  color: #313638;
+  font-size: 0.9rem;
+}
+
+.tm-btn-submit:hover {
+  color: #369bff;
+  border-color: #369bff;
+}
