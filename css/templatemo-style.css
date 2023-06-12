@@ -1,9 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  width:100%;
+  max-width: auto;
 }
 
 body {
@@ -226,6 +233,7 @@ p {
 
 .tm-contact-left,
 .tm-contact-form-container {
+  width: auto;
   max-width: 600px;
 }
 
@@ -432,6 +440,20 @@ hr {
   padding: 60px 40px 55px 70px;
 }
 
+.map {
+  width: 100%;
+  height: 340px;
+}
+
+.tm-section-height {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.tm-section-height .container {
+  height: 100%;
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1280px;
@@ -538,7 +560,6 @@ hr {
   .tm-bg-white-alpha {
     background-color: rgba(255, 255, 255, 0.5);
   }
-  
 
   .tm-site-name-container {
     background-color: rgba(255, 255, 255, 0.5);
@@ -552,7 +573,7 @@ hr {
     padding-top: 10px;
     padding-bottom: 0;
   }
-  
+
   .tm-section-logo-short {
     padding-top: 10px;
   }
@@ -583,8 +604,8 @@ hr {
   }
 
   .tm-section-contact {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 50px;
   }
 
   #outro {
@@ -652,18 +673,15 @@ hr {
   }
 
   .form-control::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 1; /* Firefox */
+    opacity: 1;
   }
 
   .form-control:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: white;
   }
 
   .form-control::-ms-input-placeholder {
-    /* Microsoft Edge */
     color: white;
   }
 
@@ -685,12 +703,11 @@ hr {
     width: 100%;
   }
 
-
   .tm-p-3-section-contact {
     padding-bottom: 60px;
   }
+  
 }
-
 
 @media (max-width: 575px) {
   .tm-section-text-container-5 {
@@ -718,7 +735,6 @@ hr {
 }
 
 @media (max-width: 529px) {
-
   .tm-section-text-container-4 {
     max-width: 320px;
     margin-left: auto;
@@ -733,7 +749,7 @@ hr {
   }
 
   .tm-site-name-container {
-    padding-left: 15%;
+    padding-left: 10%;
     padding-right: 10%;
   }
 
@@ -751,7 +767,7 @@ hr {
   }
 
   .tm-contact-left {
-    padding: 60px 30px;
+    padding: 20px 30px;
   }
 
   .tm-contact-form-container {
@@ -768,17 +784,8 @@ hr {
   }
 }
 
-.map {
-  width: 100%;
-  height: 340px;
-}
-
-.tm-section-height {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.tm-section-height .container {
-  height: 100%;
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }
